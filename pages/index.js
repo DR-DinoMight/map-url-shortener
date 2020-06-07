@@ -65,7 +65,7 @@ export default function Home() {
 
             <main>
                 <h1 className={styles.title}>
-                    Welcome to M4P.UK the URL Shortner
+                    Welcome to M4P.UK the URL Shortener
                 </h1>
 
                 <p className={styles.description}>
@@ -76,7 +76,9 @@ export default function Home() {
                     {response.type == 'success' && (
                         <div className={`${styles.card} ${styles.success}`}>
                             <span>Success!</span>
-                            <a href='{response.message}'>{response.message}</a>
+                            <a href={response.message} target='_blank'>
+                                {response.message}
+                            </a>
                         </div>
                     )}
 

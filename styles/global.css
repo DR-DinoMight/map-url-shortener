@@ -9,19 +9,28 @@
     --borders: var(--white-darker);
     --hovers: var(--blue);
 
+    background-color: var(--secondary);
+    color: var(--main);
+
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
         Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial,
         Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     line-height: 1.6;
     font-size: 18px;
 
-    background-color: var(--secondary);
-    color: var(--main);
-
     transition: color 150ms ease-in-out, background-color 350ms ease-in;
 }
 
-[data-theme='dark'] {
+@media (max-width: 600px) {
+    :root {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+[data-theme='light'] * {
     --main: var(--blue-darkest);
     --secondary: var(--white);
     --borders: var(--white-darker);
@@ -31,7 +40,7 @@
     color: var(--main);
 }
 
-[data-theme='dark'] {
+[data-theme='dark'] * {
     --main: var(--white);
     --secondary: var(--blue-darkest);
     --borders: var(--blue);
@@ -86,6 +95,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 footer a {
@@ -123,7 +133,7 @@ input {
 }
 
 input {
-    font-size: 1.5em;
+    font-size: 1.25em;
     border: 0;
     border-bottom: 1px solid var(--borders);
     font-family: inherit;
@@ -132,6 +142,7 @@ input {
     padding: 0;
     cursor: text;
     background-color: var(--secondary);
+    color: var(--main);
 }
 
 input:focus {

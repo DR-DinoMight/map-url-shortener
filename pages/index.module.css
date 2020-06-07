@@ -57,7 +57,7 @@
     flex-direction: column;
 }
 .card a {
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 [data-theme] .success {
     border: 5px solid;
