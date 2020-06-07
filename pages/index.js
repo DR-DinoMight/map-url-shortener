@@ -59,10 +59,12 @@ export default function Home() {
             <Head>
                 <title>M4P.UK</title>
                 <link rel='icon' href='/favicon.ico' />
-                <meta name='description'>
+                <meta
+                    name='description'
+                    content='
                     A simple URL Shortener - Made by Matthew Peck-Deloughry part
-                    of #100DaysOfCode
-                </meta>
+                    of #100DaysOfCode'
+                />
             </Head>
 
             <DarkModeSwitcher />

@@ -21,6 +21,10 @@
     transition: color 150ms ease-in-out, background-color 350ms ease-in;
 }
 
+* {
+    color: var(--main);
+}
+
 @media (max-width: 600px) {
     :root {
         font-size: 14px;
@@ -30,7 +34,7 @@
     }
 }
 
-[data-theme='light'] * {
+[data-theme='light'] {
     --main: var(--blue-darkest);
     --secondary: var(--white);
     --borders: var(--white-darker);
@@ -40,7 +44,7 @@
     color: var(--main);
 }
 
-[data-theme='dark'] * {
+[data-theme='dark'] {
     --main: var(--white);
     --secondary: var(--blue-darkest);
     --borders: var(--blue);
