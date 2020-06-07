@@ -59,6 +59,10 @@ export default function Home() {
             <Head>
                 <title>M4P.UK</title>
                 <link rel='icon' href='/favicon.ico' />
+                <meta name='description'>
+                    A simple URL Shortener - Made by Matthew Peck-Deloughry part
+                    of #100DaysOfCode
+                </meta>
             </Head>
 
             <DarkModeSwitcher />
@@ -76,7 +80,11 @@ export default function Home() {
                     {response.type == 'success' && (
                         <div className={`${styles.card} ${styles.success}`}>
                             <span>Success!</span>
-                            <a href={response.message} target='_blank'>
+                            <a
+                                href={response.message}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 {response.message}
                             </a>
                         </div>
@@ -102,6 +110,7 @@ export default function Home() {
                                     <input
                                         type='url'
                                         name='url'
+                                        id='url'
                                         onChange={handleChange}
                                         required
                                     ></input>
@@ -111,6 +120,7 @@ export default function Home() {
                                     <input
                                         type='text'
                                         name='slug'
+                                        id='slug'
                                         onChange={handleChange}
                                     ></input>
                                 </fieldset>
@@ -127,6 +137,7 @@ export default function Home() {
                     <a
                         href='https://vercel.com'
                         target='_blank'
+                        rel='noreferrer'
                         rel='noopener noreferrer'
                     >
                         Vercel
@@ -135,6 +146,7 @@ export default function Home() {
                     <a
                         href='https://nextjs.org/'
                         target='_blank'
+                        rel='noreferrer'
                         rel='noopener noreferrer'
                     >
                         Next.js
@@ -142,11 +154,19 @@ export default function Home() {
                 </div>
                 <div className=''>
                     Made by{' '}
-                    <a href='https://deloughry.co.uk' target='_blank'>
+                    <a
+                        href='https://deloughry.co.uk'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
                         Matthew Peck-Deloughry
                     </a>{' '}
                     June 2020 as part of{' '}
-                    <a href='https://www.100daysofcode.com/' target='_blank'>
+                    <a
+                        href='https://www.100daysofcode.com/'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
                         #100DaysOfCode
                     </a>
                 </div>
