@@ -64,10 +64,12 @@ export default function Home() {
             <DarkModeSwitcher />
 
             <main>
-                <h1 className={styles.title}>Welcome to m4p.uk URL Shortner</h1>
+                <h1 className={styles.title}>
+                    Welcome to M4P.UK the URL Shortner
+                </h1>
 
                 <p className={styles.description}>
-                    Get started by putting a URL below
+                    Get started by entering a URL below
                 </p>
 
                 <div className={styles.grid}>
