@@ -1,0 +1,168 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title a {
+    color: var(--hovers);
+    text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+}
+
+.title,
+.description {
+    text-align: center;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card a {
+    font-size: 2.5em;
+}
+[data-theme] .success {
+    border: 5px solid;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+[data-theme] .success span {
+    text-align: left;
+}
+[data-theme='light'] .success {
+    border-color: #2f9e44;
+    background-color: #0c6534;
+    color: var(--secondary);
+}
+
+[data-theme='light'] .success a,
+[data-theme='light'] .success a:hover,
+[data-theme='light'] .success a:visited,
+[data-theme='light'] .success a:active {
+    color: var(--white);
+}
+
+[data-theme='dark'] .success {
+    border-color: #0c6534;
+    background-color: #2f9e44;
+    color: var(--main);
+}
+
+[data-theme] .error {
+    border: 5px solid;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-color: #fa5252;
+    background-color: #c92a2a;
+    color: var(--white);
+    text-align: left;
+}
+
+[data-theme] .error a,
+[data-theme] .error a:hover,
+[data-theme] .error a:visited,
+[data-theme] .error a:active {
+    color: var(--white);
+}
+
+.card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.logo {
+    height: 1em;
+    background-color: var(--white);
+}
+
+.logo.next {
+    width: 50px;
+    height: 2em;
+    background-color: var(--white);
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.loader {
+    border: 16px solid var(--borders); /* Light grey */
+    border-top: 16px solid var(--main); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form fieldset {
+    margin-bottom: 10px;
+}
+.form button {
+    margin-top: 10px;
+}

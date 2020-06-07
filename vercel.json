@@ -1,0 +1,7 @@
+{
+  "name": "mapd-url-shortner",
+  "version": 2,
+  "env": {
+    "MONGODB_URI": "@mongodb-uri"
+  }
+}
