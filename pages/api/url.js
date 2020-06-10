@@ -26,10 +26,9 @@ export default async (req, res) => {
             lower: true, // convert to lower case, defaults to `false`
             strict: true,
         };
-        let randomURL =
-            jsonBody.slug !== null
-                ? slugify(jsonBody.slug, slugifyOptions)
-                : nanoid();
+        let randomURL = jsonBody.slug
+            ? slugify(jsonBody.slug, slugifyOptions)
+            : nanoid();
 
         try {
             let docs = await collection.insertOne({
