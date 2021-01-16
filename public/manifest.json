@@ -1,7 +1,7 @@
 {
     "theme_color": "#f8e71c",
     "background_color": "#f8e71c",
-    "display": "minimal-ui",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "app_name": "M4P URL Shortner",
